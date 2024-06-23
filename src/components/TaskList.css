@@ -1,0 +1,73 @@
+.task-list {
+      text-align: center;
+      margin-top: 20px;
+      background-color: #000000;
+      color: #fff;
+  }
+  
+  .task-list h1 {
+      margin-bottom: 20px;
+  }
+  
+  .task-list ul {
+      list-style: none;
+      padding: 0;
+  }
+  
+  .task-list li {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 10px;
+      
+      justify-self: center;
+      padding: 10px;
+      border: 1px solid #555;
+      border-radius: 4px;
+      background-color: #444;
+  }
+  
+  .task-list li a {
+      text-decoration: none;
+      color: #fff;
+  }
+  
+  .task-list li a:hover {
+      text-decoration: underline;
+  }
+  
+  .task-list button {
+      background-color: #ff4444;
+      left: 25px;
+      color: white;
+      border: none;
+      padding: 5px 10px;
+      cursor: pointer;
+      border-radius: 25px;
+  }
+  
+  .task-list button:hover {
+      background-color: #ff0000;
+  }
+  
+  .task-list .add-task-link,
+  .task-list .back-to-welcome-link {
+      display: block;
+      margin: 20px auto;
+      padding: 10px 20px;
+      background-color: #543fcb;
+      color: white;
+      text-decoration: none;
+      border-radius: 25px;
+      width: fit-content;
+  }
+  
+  .task-list .add-task-link:hover,
+  .task-list .back-to-welcome-link:hover {
+      background-color: #FFFF00;
+      color: black;
+  }
+  
+  .task-list .back-to-welcome-link {
+      margin-top: 40px;
+  }
+  

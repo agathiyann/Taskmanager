@@ -1,38 +1,69 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #000000;
+  color: #fff;
+}
+
 .App {
-  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #000000;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.task-list ul {
+  list-style: none;
+  padding: 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.task-list li {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  background-color: #444;
+  padding: 10px;
+  border-radius: 5px;
 }
 
-.App-link {
-  color: #61dafb;
+.task-list button {
+  background-color: #ff4444;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.task-list button:hover {
+  background-color: #FFFF00;
+  
+}
+
+.task-detail, .task-form {
+  margin-top: 20px;
+}
+
+.task-form label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.task-form input, .task-form textarea {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  background-color: #444;
+  color: #fff;
+  border: 1px solid #666;
+}
+
+.task-form button {
+  background-color: #00cc00;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.task-form button:hover {
+  background-color: #009900;
 }
