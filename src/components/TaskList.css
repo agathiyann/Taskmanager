@@ -47,6 +47,7 @@
   
   .task-list button:hover {
       background-color: #ff0000;
+      color: black;
   }
   
   .task-list .add-task-link,
