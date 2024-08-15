@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const api = axios.create({
-  baseURL: 'mongodb+srv://agathi:foodmenu1234@taskmanager.epeu1mf.mongodb.net/taskmanager', 
+  baseURL: 'https://taskbackend-0dot.onrender.com', 
 });
 
 export const createTask = (task) => {

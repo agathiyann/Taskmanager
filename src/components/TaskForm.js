@@ -28,7 +28,7 @@ const TaskForm = ({ tasks, addTask, updateTask }) => {
 
 const handleSubmit = async (e) => {
   e.preventDefault();
-  console.log("Submitting Task:", task);  // Log the task data
+  console.log("Submitting Task:", task);  
   if (isEditing) {
     await updateTask(task._id, task);
   } else {

@@ -6,7 +6,7 @@ const TaskDetail = ({ tasks }) => {
   const task = tasks.find(task => task.id === id);
 
   if (!task) {
-    return <div>Task not found</div>;
+    return <div>Task not. found</div>;
   }
 
   return (
