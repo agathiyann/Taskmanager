@@ -3,7 +3,7 @@ import { Link, useParams } from 'react-router-dom';
 
 const TaskDetail = ({ tasks }) => {
   const { id } = useParams();
-  const task = tasks.find(task => task._id === id);  // Updated _id instead of id
+  const task = tasks.find(task => task._id === id);  
 
   if (!task) {
     return <div>Task not found</div>;
@@ -15,7 +15,7 @@ const TaskDetail = ({ tasks }) => {
       <p>{task.description}</p>
       <p>Due: {task.dueDate}</p>
       <div>
-        <Link to={`/edit/${task._id}`} key={task._id}>Edit Task</Link>  {/* Updated _id instead of id */}
+        <Link to={`/edit/${task._id}`} key={task._id}>Edit Task</Link>  
       </div>
       <div>
         <Link to="/tasks">Back to Task List</Link>
